@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.example.com/event-spec/v1.json",
+  "spec_version": "1.0.0",
+  "event_id": "EVT-001-01",
+  "event_no": 1,
+  "event_name": "tap_email_field",
+  "screen": {
+    "screen_id": "SCR-001",
+    "screen_name": "Login"
+  },
+  "trigger": {
+    "action": "tap",
+    "ja": "メールアドレス入力欄をタップしたとき",
+    "en": "When the user taps the email address input field"
+  },
+  "parameters": [
+    {
+      "name": "field_name",
+      "description": {
+        "ja": "メールアドレス入力欄へのフォーカス",
+        "en": "Focus on the email address input field"
+      },
+      "unit": null,
+      "data_type": "string",
+      "required": true,
+      "valid_values": ["email", "password"],
+      "sample_value": "email"
+    }
+  ],
+  "uat": {
+    "case_id": "XXX_0001",
+    "status": "not_started"
+  },
+  "destination": {
+    "server_table": "app_event_log"
+  },
+  "figma": {
+    "file_key": "zIkG5LQpkYl18dSR1f4Y6f",
+    "node_id": "2031:2",
+    "component_name": "EVT-001-01_tap_email_field"
+  },
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-10-13"
+  }
+}
